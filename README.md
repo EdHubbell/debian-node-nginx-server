@@ -19,20 +19,20 @@ Instructions:
 
 - Now sit around and hit enter or 'y' a few times.
 
-- Want a demo app?  make a dir where you want to put it and do this:
+- Want a demo app?  Make a dir where you want to put it and do this:
 ```
 > git clone https://github.com/mmukhin/psitsmike_example_1.git
 > cd psitsmike_example_1
 > npm install
 ```
 
-- Edit the index.html file and replace 'localhost' with your servers ip address.  Then fire it up.
+- Edit the index.html file and replace 'localhost' with your servers ip address.  Then fire it up using pm2.
 ```
 > pm2 start app.js
 ```
 
 - Copy down the nginx config files - you'll have to create a conf.d folder.
-- Copy down the init.d scripts for nginx and pm2 to /etc/init.d/
+- Copy down the init.d scripts for nginx and pm2 to /etc/init.d/ and then configure then to run on startup.
 ```
 > update-rc.d pm2-init.sh defaults
 > update-rc.d nginx defaults
