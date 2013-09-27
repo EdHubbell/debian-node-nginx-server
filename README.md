@@ -1,4 +1,4 @@
-debian-node-nginx-server-
+debian-node-nginx-server
 =========================
 
 scripts to set up a debian wheezy server with node, mongo, nginx and pm2 with socket.io support
