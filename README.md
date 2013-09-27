@@ -11,22 +11,22 @@ I'm no git expert.  And there are only so many files here, so I'd say just copy 
 
 Instructions:
 - copy down usr/local/sbin/nodeServerSetup.sh
-> chmod +x nodeServerSetup.sh
-> nodeServerSetup.sh
+```> chmod +x nodeServerSetup.sh
+```> nodeServerSetup.sh
 - now sit around and hit enter or 'y' a few times.
 
 - want a demo app?  make a dir where you want to put it and do this:
-> git clone https://github.com/mmukhin/psitsmike_example_1.git
-> cd psitsmike_example_1
-> npm install
+```> git clone https://github.com/mmukhin/psitsmike_example_1.git
+```> cd psitsmike_example_1
+```> npm install
 - edit the index.html file and replace 'localhost' with your servers ip address.
-> pm2 start app.js
+```> pm2 start app.js
 
 - copy down the nginx config files - you'll have to create a conf.d folder.
 - copy down the init.d scripts for nginx and pm2 to /etc/init.d/
-> update-rc.d pm2-init.sh defaults
-> update-rc.d nginx defaults
+```> update-rc.d pm2-init.sh defaults
+```> update-rc.d nginx defaults
 - at this point, we should be ready to go.  not even kidding.  reboot this sucker.
-> reboot
+````> reboot
 
 Hope this helps someone. ~Ed
