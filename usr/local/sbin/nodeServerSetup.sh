@@ -26,6 +26,9 @@ apt-get install libpcre3 libpcre3-dev libpcrecpp0 libssl-dev zlib1g-dev
 # lets get monit on here as well...
 apt-get install monit
 
+# and redis.  Need redis.  Probably/
+apt-get install redis-server
+
 # tell monit that it should look for monit config files in the /etc/monit.d/* folder
 echo 'include /etc/monit.d/*' >> /etc/monit/monitrc
 
