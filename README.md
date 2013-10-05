@@ -38,6 +38,11 @@ Instructions:
 > update-rc.d nginx defaults
 ```
 
+Now if you wanna, you can edit the /etc/mongod.conf file at this point to enable authentication and make it its own master.  Totally up to you.  If you are into that (and we are), then add these lines:
+auth = true
+master = true
+
+
 - At this point, we should be ready to go.  Not even kidding.  Reboot this sucker.
 ```
 > reboot
